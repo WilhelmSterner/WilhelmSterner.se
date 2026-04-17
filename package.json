@@ -1,6 +1,6 @@
 {
   "name": "wilhelmsterner.se",
-  "homepage": "https://your-username.github.io/repo-name",
+  "homepage": "https://wilhelmsterner.github.io/WilhelmSterner.se",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
