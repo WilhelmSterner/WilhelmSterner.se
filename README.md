@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+🌐 Personal Website – Wilhelm Sterner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal website.
+The site showcases who I am, my journey as an elite cross-country skier, and my work and projects.
 
-Currently, two official plugins are available:
+🚀 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The website is built as a modern, component-based frontend application. It highlights:
 
-## React Compiler
+My background and story
+Athletic goals and results
+News and updates
+Media and content
+Schedule and upcoming events
+Opportunities for collaboration and support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal of this site is to create a clear and engaging platform where visitors can follow my journey and connect with me.
 
-## Expanding the ESLint configuration
+🧩 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The site is built using reusable React components:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+HeroSection.tsx – Landing section with first impression
+IntroSection.tsx – Introduction about me
+GoalSection.tsx – My ambitions and long-term goals
+ResultsSection.tsx – Competition results
+NewsSection.tsx – Latest updates
+MediaSection.tsx – Images, videos, and content
+ScheduleSection.tsx – Upcoming races and events
+SupportSection.tsx – Sponsorship and collaboration info
+Nav.tsx – Navigation bar
+🛠️ Tech Stack
+React / Next.js
+TypeScript
+CSS / Tailwind
+📦 Installation & Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clone the repository:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Run the development server:
+
+npm run dev
+
+Open in browser:
+
+http://localhost:3000
+🎯 Purpose
+
+This website serves as:
+
+A personal brand platform
+A hub for sponsors and collaborations
+A way to document my journey in elite sports
+A portfolio for future opportunities
+🤝 Collaboration
+
+I’m open to collaborations with companies and organizations that align with my journey and values.
+
+If you're interested, feel free to reach out.
+
+📄 License
+
+This project is open source and available under the MIT License.
