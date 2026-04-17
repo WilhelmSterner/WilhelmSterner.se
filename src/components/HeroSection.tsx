@@ -5,6 +5,27 @@ import onPodium from "../../images/on-podium.jpg";
 import sm2 from "../../images/sm-2.JPG";
 import u23_1 from "../../images/u23-1.JPG";
 
+const slides = [
+  {
+    src: onPodium,
+    alt: "Wilhelm Sterner på prispallen i Ulricehamn.",
+    eyebrow: "Svenska Cupen",
+    title: "Pallplats i Ulricehamn",
+  },
+  {
+    src: sm2,
+    alt: "Wilhelm Sterner under SM-sprinten.",
+    eyebrow: "Mästerskap",
+    title: "8e plats på SM-sprinten",
+  },
+  {
+    src: u23_1,
+    alt: "Wilhelm Sterner under 20 km masstart på U23-VM.",
+    eyebrow: "Internationellt",
+    title: "20 km masstart på U23-VM",
+  },
+];
+
 function HeroSection() {
   return (
     <>
@@ -19,7 +40,7 @@ function HeroSection() {
             <a className="button" href="#tavlingar">
               Kommande starter
             </a>
-            <a className="text-link" href="mailto:wilhem.sterner@outlook.com">
+            <a className="text-link" href="mailto:wilhelm.sterner@outlook.com">
               Kontakt
             </a>
           </div>
@@ -28,34 +49,27 @@ function HeroSection() {
           className="hero-portrait"
           aria-label="Bildplats för Wilhelm Sterner"
         >
-          <Carousel className="hero-carousel">
-            <Carousel.Item>
-              <img
-                src={onPodium}
-                alt="Wilhelm Sterner under tävling"
-                className="hero-img"
-              />
-              <CarouselCaption className="carousel-caption">
-                Pallplats i Ulricehamn
-              </CarouselCaption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <img src={sm2} alt="Wilhelm Sterner under SM-sprinten" className="hero-img" />
-              <CarouselCaption className="carousel-caption">
-                8e plats på SM sprinten
-              </CarouselCaption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <img src={u23_1} alt="Wilhelm Sterner under U23-VM" className="hero-img" />
-              <CarouselCaption className="carousel-caption">
-                20 km masstart på U23VM
-              </CarouselCaption>
-            </Carousel.Item>
+          <Carousel
+            className="hero-carousel"
+            fade
+            interval={5000}
+            indicators={slides.length > 1}
+          >
+            {slides.map((slide) => (
+              <Carousel.Item key={slide.title}>
+                <div className="hero-slide">
+                  <img src={slide.src} alt={slide.alt} className="hero-img" />
+                  <div className="hero-slide-overlay" aria-hidden="true" />
+                </div>
+                <CarouselCaption className="carousel-caption">
+                  <span className="carousel-eyebrow">{slide.eyebrow}</span>
+                  <strong>{slide.title}</strong>
+                </CarouselCaption>
+              </Carousel.Item>
+            ))}
           </Carousel>
 
-          <figcaption>Bilder på året Höjdpunkter</figcaption>
+          <figcaption>Höjdpunkter från säsongen</figcaption>
         </figure>
       </section>
     </>

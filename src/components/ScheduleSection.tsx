@@ -9,7 +9,10 @@ function ScheduleSection() {
       >
         <div className="section-heading">
           <p className="eyebrow">Tävlingar framåt</p>
-          <h2 id="schedule-title"></h2>
+          <h2 id="schedule-title">
+            Nu när säsongen är slut, fylls kalendern på sporadiskt. Håll utkik
+            här under hösten och vintern
+          </h2>
         </div>
         <div className="schedule-list">
           {competitions.map((competition) => (

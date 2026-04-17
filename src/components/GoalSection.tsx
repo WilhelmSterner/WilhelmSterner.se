@@ -10,7 +10,7 @@ function GoalSection() {
             Att nå målen kräver hårt arbete över tid. För att ta mig dit krävs
             marginella förbättringar dag och in och dag ut.
             <br />
-            <br /> -Jag tror jag kan lyckas
+            <br />
           </h2>
         </div>
         <ol className="goals-list">
