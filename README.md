@@ -42,4 +42,4 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/WilhelmSterner/WilhelmSterner.se.git
-cd your-repo-name
+cd WilhelmSterner
